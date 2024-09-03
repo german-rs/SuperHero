@@ -1,0 +1,263 @@
+/* 
+    Nombre estudiante: Germán A. Riveros Sepúlveda.
+    Generación: 14.
+    Jornada: Vespertina.   
+    Prueba: Fundamentos de programación en JavaScript
+    Enlace del repositorio: https://github.com/german-rs/SuperHero
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-dark: #1B1E21;
+    --clr-light: #FAFAFA;
+    --clr-primario:#E32E29;
+    --clr-secundario: #4DA9E5;
+    --clr-fondo-claro: #F5F5F5;
+    --clr-fondo-oscuro: #212529;
+    --clr-acento: #FFE517;
+    --clr-texto-prim-claro: #2B2B2B;
+    --clr-texto-prim-oscuro: #F5F5F5;
+    --clr-texto-secundario: #6D6D6D;  
+    --clr-separador: #B0B0B0;
+}
+
+body *{
+    font-family: "Montserrat", sans-serif;
+} 
+
+body.light-mode {
+    background-color: var(--clr-fondo-claro);
+    color: var(--clr-texto-prim-claro);
+}
+
+body.dark-mode {
+    background-color: var(--clr-fondo-oscuro);
+    color: var(--clr-texto-prim-oscuro);
+}
+
+.modo{
+    background-color: var(--clr-dark);
+    color: var(--clr-acento);
+    padding: 0.5em 0;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 20px;
+}
+
+strong{
+    color: var(--clr-secundario);
+}
+
+
+.barra-navegacion__img{   
+    width: 80px;
+}
+
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.encabezado__img{
+    min-width: 100px;
+    width: 150px;
+}
+
+.encabezado__titulo{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.buscador__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start ;
+    gap: 1rem;
+}
+
+.buscador__texto{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.buscador__campo{
+    max-width: 900px;
+}
+
+.resultado{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado__titulo{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1em;;
+}
+
+.resultado__contenedor{
+    width: 100%;
+} 
+
+.resultado__img-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.resultado__subtitulo{
+    text-align: center;
+}
+
+.resultado__img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#chartContainer{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pie{
+    background-color: var(--clr-fondo-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1rem 0;
+}
+
+.pie__img{
+    width: 100px;
+}
+
+.pie_texto{
+    color: var(--clr-texto-prim-oscuro);
+}
+
+/* xxs */
+@media (min-width: 310px) {
+    .encabezado__titulo{
+        font-size: 30px;
+    }
+    .encabezado__img{
+        width: 250px;
+    }
+    .buscador__texto{
+        font-size: 16px;
+    }
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+    .encabezado__titulo{
+        font-size: 40px;
+    }
+    .encabezado__img{
+        width: 300px;
+    }
+    .buscador__texto{
+        font-size: 16px;
+    }
+}
+
+/* sm. */
+@media (min-width: 640px) {
+    .encabezado__titulo{
+        font-size: 50px;
+        font-weight:600;
+    }
+    .encabezado__img{
+        width: 350px;
+    }
+    .buscador__texto{
+        font-size: 18px;
+    }
+    .resultado__titulo{
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+/* md. */
+@media (min-width: 768px) {
+    .encabezado__titulo{
+        font-size: 60px;
+    }
+    .encabezado__img{
+        width: 400px;
+    }
+    .buscador__texto{
+        font-size: 20px;
+    }
+}
+
+/* lg. */
+@media (min-width: 1024px) {
+    .encabezado__titulo{
+        font-size: 70px;
+        font-weight:700;
+    }
+    .encabezado__img{
+        width: 450px;
+    }
+
+    .buscador__wrapper{
+        align-items: center;
+    }
+
+    .buscador__texto{
+        font-size: 22px;
+    }
+
+ 
+}
+
+/* xl. */
+@media (min-width: 1280px) {
+    .encabezado__titulo{
+        font-size: 80px;
+        font-weight:800;
+    }
+    .encabezado__img{
+        width: 500px;
+    }
+    .buscador__texto{
+        font-size: 24px;
+    }
+}
+
+/* 2xl. */
+@media (min-width: 1536px) {
+    .encabezado__titulo{
+        font-size: 90px;
+        font-weight:900;
+    }
+    .buscador__texto{
+        font-size: 26px;
+    }
+}
