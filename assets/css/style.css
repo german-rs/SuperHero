@@ -10,7 +10,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
     box-sizing: border-box;
 }
 
@@ -82,7 +81,6 @@ strong{
     font-size: 20px;
     font-weight: 500;
 }
-
 
 .buscador__wrapper{
     display: flex;
@@ -180,9 +178,6 @@ strong{
     .encabezado__img{
         width: 300px;
     }
-    .buscador__texto{
-        font-size: 16px;
-    }
 }
 
 /* sm. */
@@ -233,8 +228,6 @@ strong{
     .buscador__texto{
         font-size: 22px;
     }
-
- 
 }
 
 /* xl. */
